@@ -69,8 +69,8 @@ public class NeworderAdapter extends RecyclerView.Adapter<NeworderAdapter.ViewHo
         holder.usseraddress.setText(address);
         String status = hm.get("status").toString();
         holder.orderstatus.setText(status);
-        DateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
-        DateFormat outputFormat = new SimpleDateFormat("dd MMM yyyy");
+        DateFormat inputFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
+        DateFormat outputFormat = new SimpleDateFormat("dd MMM yyyy hh:mm a");
         String orderdate = hm.get("date").toString();
         Date date = null;
         try {
